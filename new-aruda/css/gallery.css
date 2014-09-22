@@ -1,0 +1,31 @@
+body {
+	/*background-color: #E4FFFC;*/
+	margin: 0 auto;
+	font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial";
+}
+
+.images {
+	margin: 0 auto;
+}
+.images ul {
+	list-style: none;
+	text-align: center;
+}
+.images ul li {
+	display: inline;
+	padding: 5px;
+	
+}
+.images ul li img {
+	width: 260px;
+	height: 160px;
+	border-radius: 3%;
+	
+}
+.images ul li img:hover {
+	-webkit-filter: grayscale(100%);
+}
+#image-desc {
+	font-weight: bold;
+	text-transform: uppercase;
+}

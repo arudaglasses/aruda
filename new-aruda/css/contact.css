@@ -1,0 +1,28 @@
+body {
+	/*background-color: #E4FFFC;*/
+	margin: 0 auto;
+	font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial";
+}
+
+#left-contact {
+	padding-top:20px;
+	padding-left: 20px;
+	text-align:center;
+	float:left;
+	width:300px;
+}
+
+#right-contact {
+	padding-top:20px;
+	width:400px;
+	float:right;
+	clear:right;
+}
+
+#contact-form { padding-left: 30px; }
+
+#form-div {margin-bottom:15px;float:left}
+
+#content label {width:150px;float:left;text-align:left}
+
+#content input,textarea {width:200px;float:left;}

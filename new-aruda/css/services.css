@@ -1,0 +1,30 @@
+.service h3 {
+	background-color: #E4FFFC;	
+	margin:0;
+}
+
+.service {
+	width:780;
+	padding:10px;	
+	
+}
+
+.service p {text-align:justify}
+
+.img-serv {
+	width:100%;
+	height:auto;
+	margin: 10px auto;
+	text-align:center;	
+}
+
+
+div.img-serv img {
+	
+	width: 350px;
+	height: 200px;
+	border-radius: 10px;
+}
+
+
+
