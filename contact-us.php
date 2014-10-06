@@ -45,12 +45,11 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 </head>
 <body>
+<?php
+include "header.php";
+?>
 	<div id='main-content'>
 		<!-- Nav -->
-	<?php
-	include "header.php";
-	?>
-
 		<div id='content'>
 			<div id='left-contact'>
 				<h4>Postal Address</h4>
@@ -60,7 +59,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
 				<p>Gokula Post</p>
 				<p>Bangalore 560 054</p>
 				<br />
-				<div id="googleMap" style="width:300px;height:200px;margin-bottom:15px"></div>	
+				<div id="googleMap"
+					style="width: 300px; height: 200px; margin-bottom: 15px"></div>
 			</div>
 			<div id='right-contact'>
 				<h4>E-mail</h4>
@@ -71,26 +71,29 @@ google.maps.event.addDomListener(window, 'load', initialize);
 				<p style='margin-bottom: 15px'>Mobile: +91 93436 80893</p>
 				<h4 style='margin-top: 15px'>Contact Form</h4>
 				<form id='contact-form'>
-				<div id='form-div'>
-					<label>Full Name*</label> <input type="text" id='name' />
-				</div>
-				<div id='form-div'>
-					<label>Email</label> <input type="text" id='email' />
-				</div>
-				<div id='form-div'>
-					<label>Mobile Number*</label> <input type="text" id='mob-num' />
-				</div>
-				<div id='form-div'>
-					<label>Message*</label>
-					<textarea id='message'></textarea>
-				</div>
-				<div style='margin-left: 120px;'>
-					<input style='width:120px' type="submit" id='submit' name='submit' value='Submit'/>
-				</div>
+					<div id='form-div'>
+						<label>Full Name*</label> <input type="text" id='name' />
+					</div>
+					<div id='form-div'>
+						<label>Email</label> <input type="text" id='email' />
+					</div>
+					<div id='form-div'>
+						<label>Mobile Number*</label> <input type="text" id='mob-num' />
+					</div>
+					<div id='form-div'>
+						<label>Message*</label>
+						<textarea id='message'></textarea>
+					</div>
+					<div style='margin-left: 120px;'>
+						<input style='width: 120px' type="submit" id='submit'
+							name='submit' value='Submit' />
+					</div>
 				</form>
 			</div>
 		</div>
-		<?php include "footer.html"; ?>
+	</div>
+	<div id="footer">
+		<p>Designed and Developed by Tweaks</p>
 	</div>
 </body>
 </html>
