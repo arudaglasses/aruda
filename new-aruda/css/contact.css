@@ -1,9 +1,3 @@
-body {
-	/*background-color: #E4FFFC;*/
-	margin: 0 auto;
-	font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial";
-}
-
 #left-contact {
 	padding-top:20px;
 	padding-left: 20px;
@@ -18,11 +12,19 @@ body {
 	float:right;
 	clear:right;
 }
+label {
+	color: #4a6162;
+	font-family: Book Antiqua;
+	font-style: italic;
+	text-align: center;
+}
 
 #contact-form { padding-left: 30px; }
 
-#form-div {margin-bottom:15px;float:left}
-
+.form-div {margin-bottom:15px;float:left;}
+.form-div img {float:left; margin:0 5px}
+#name-error, #mob-error, #msg-error, #email-error {display:none}
+.red-border {border: 1px solid red;}
 #content label {width:150px;float:left;text-align:left}
 
-#content input,textarea {width:200px;float:left;}
+#content input,textarea,select {width:200px;float:left;margin-top:3px}

@@ -58,7 +58,7 @@
 				Quality management done in front of PMC (Project Management Cell).
 				Product Testing also done at site and all required certificate and
 				report issued by Dow corning.</p>
-			<h4>ANODISING PLANT></h4>
+			<h4>ANODISING PLANT</h4>
 			<p>We are processing all the anodizing planning in M/s Saluja Engg Co
 				(P) Ltd. which is a part of our group. It has modern plant with
 				microprocessor control system to produce quality aluminium anodizing

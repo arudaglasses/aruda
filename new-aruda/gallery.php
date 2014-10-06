@@ -14,11 +14,13 @@
 <link href="css/home.css" rel="stylesheet" />
 </head>
 <body>
-<?php include "header.php" ?>
+<?php include "header.php"?>
 	<div id="maincontent">
+
+		<div style='text-align: center' id="content">
 		
-		<div id="content">
-			<div class="images">
+		<img src='images/page_under_construction.gif' align='center'>
+			<!--  	<div class="images">
 				<ul>
 					<li><a href="#"><img src="images/1.jpg" /></a></li>
 					<li><a href="#"><img src="images/2.jpg" /></a></li>
@@ -50,12 +52,12 @@
 					<p id="image-desc">Sagar House - USA</p>
 					<hr style="margin-right: 35px;" />
 				</ul>
-			</div>
+			</div>-->
 		</div>
-</div>
-<div id="footer">
-	<p>Designed and Developed by Tweaks</p>
-</div>
+	</div>
+	<div id="footer">
+		<p>Designed and Developed by Tweaks</p>
+	</div>
 </body>
 </head>
 </html>

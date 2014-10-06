@@ -47,23 +47,24 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 
 </head>
-<body>
+<body class='body'>
+<?php
+include "header.php";
+?>
 	<div id='maincontent'>
 		<!-- Nav -->
-	<?php
-	include "header.php";
-	?>
-
 		<div id="content">
+
 			<div id='right-contact'>
-				<h4>Postal Address</h4>
+				<h4>Office Address</h4>
 				<p>Aruda Glass Solutions</p>
 				<p>#9/2, Near Lakshmi Minerals</p>
 				<p>Bandappa Garden</p>
 				<p>Gokula Post</p>
 				<p>Bangalore 560 054</p>
 				<br />
-				<div id="googleMap" style="width:320px;height:300px;margin-bottom:15px"></div>	
+				<div id="googleMap"
+					style="width: 320px; height: 300px; margin-bottom: 15px"></div>
 			</div>
 			<div id='left-contact'>
 				<h4>E-mail</h4>
@@ -72,28 +73,67 @@ google.maps.event.addDomListener(window, 'load', initialize);
 				<p style='margin-bottom: 15px'>Mobile: +91 88808 80893</p>
 				<h4>Prakash Venkatappa</h4>
 				<p style='margin-bottom: 15px'>Mobile: +91 93436 80893</p>
-				<h4 style='margin-top: 15px'>Contact Form</h4>
-				<form id='contact-form'>
-				<div id='form-div'>
-					<label>Full Name*</label> <input type="text" id='name' />
-				</div>
-				<div id='form-div'>
-					<label>Email</label> <input type="text" id='email' />
-				</div>
-				<div id='form-div'>
-					<label>Mobile Number*</label> <input type="text" id='mob-num' />
-				</div>
-				<div id='form-div'>
-					<label>Message*</label>
-					<textarea id='message'></textarea>
-				</div>
-				<div style='margin-left: 120px;'>
-					<input style='width:120px' type="submit" id='submit' name='submit' value='Submit'/>
-				</div>
+
+				<form id='contact-form' action='contact-submit.php' method='post'>
+					<h4 style='margin-top: 25px'>Please fill the below details if you
+						have any queries</h4>
+					<div class='form-div'>
+						<label>Full Name*</label> <input type="text" id='name' name='name' />
+						<div id='name-error'>
+							<img title='Please enter a valid value' src='images/error.jpg'>
+						</div>
+					</div>
+					<div class='form-div'>
+						<label>Email(Optional)</label> <input type="text" id='email'
+							name='email' />
+						<div id='email-error'>
+							<img title='Please enter a valid value' src='images/error.jpg'>
+						</div>
+					</div>
+					<div class='form-div'>
+						<label>Mobile Number*</label> <input maxlength='10' type="text"
+							id='mob-num' name='mob-num' />
+						<div id='mob-error'>
+							<img title='Please enter a valid value' src='images/error.jpg'>
+						</div>
+					</div>
+					<div class='form-div'>
+						<label>Services(Optional)</label> <select name='services'>
+							<option value="select" default>Select</option>
+							<option value="Windows/Sliding window cases">Windows/Sliding
+								window cases</option>
+							<option value="Casement windows">Casement windows</option>
+							<option value="Partitions">Partitions</option>
+							<option value="Doors">Doors</option>
+							<option value="Safety Glasses">Safety Glasses</option>
+							<option value="Shower Enclosures">Shower Enclosures</option>
+							<option value="Curtain Wall/Glazing">Curtain Wall/Glazing</option>
+							<option value="Others">Others</option>
+						</select>
+					</div>
+					<div class='form-div'>
+						<label>Query*</label>
+						<textarea id='message' name='message'></textarea>
+						<div id='msg-error'>
+							<img title='Please enter a valid value' style='margin-top: 12px'
+								src='images/error.jpg'>
+						</div>
+					</div>
+					<div style='margin-left: 120px;'>
+						<input style='width: 120px' type="submit" id='submit'
+							name='submit' onclick='return validate()' value='Submit' />
+					</div>
 				</form>
 			</div>
 		</div>
 		<?php include "footer.php"; ?>
+		<?php
+		if (isset ( $_GET ['msg'] )) {
+			echo '<script>alert("Your query has been successfully sent. One of our representatives will call you shortly");';
+			echo "window.location.href = 'contact.php';</script>";
+		}
+		?>
 	</div>
 </body>
 </html>
+
