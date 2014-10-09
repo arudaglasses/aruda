@@ -54,33 +54,48 @@ include "header.php";
 	<div id='maincontent'>
 		<!-- Nav -->
 		<div id="content">
+			<div id='left-contact' style='text-align: center'>
+				<p
+					style='margin: 0px 0px 15px; text-align: left; padding-left: 20px;'>
+					<img width="25px" height="35px" title='E-mail'
+						src='images/email.jpg'> info.aruda@gmail.com
+				</p>
+				<p
+					style='margin: 0px 0px 15px; text-align: left; padding-left: 20px;'>
+					<img width="25px" height="35px" title='Phone/Mobile'
+						src='images/Mobile2.png'> 88808 80893 (Karthik P)
+				</p>
+				<p
+					style='margin: 0px 0px 15px; text-align: left; padding-left: 20px;'>
+					<img width="25px" height="35px" title='Phone/Mobile'
+						src='images/Mobile2.png'> 93436 80893 (Prakash V)
+				</p>
 
-			<div id='right-contact'>
-				<h4>Office Address</h4>
-				<p>Aruda Glass Solutions</p>
-				<p>#9/2, Near Lakshmi Minerals</p>
-				<p>Bandappa Garden</p>
-				<p>Gokula Post</p>
-				<p>Bangalore 560 054</p>
+				<h3 style='margin: 30px 0 5px 20px; text-align: left'>Where are we?</h3>
+				<p style='margin: 0; text-align: left; padding-left: 20px;'>Aruda
+					Glass Solutions</p>
+				<p style='margin: 0; text-align: left; padding-left: 20px;'>#9/2,
+					Near Lakshmi Minerals</p>
+				<p style='margin: 0; text-align: left; padding-left: 20px;'>Bandappa
+					Garden</p>
+				<p style='margin: 0; text-align: left; padding-left: 20px;'>Gokula
+					Post</p>
+				<p style='margin: 0; text-align: left; padding-left: 20px;'>Bangalore
+					560 054</p>
 				<br />
 				<div id="googleMap"
-					style="width: 320px; height: 300px; margin-bottom: 15px"></div>
+					style="width: 320px; height: 225px; margin-bottom: 15px; text-align: center"></div>
 			</div>
-			<div id='left-contact'>
-				<h4>E-mail</h4>
-				<p style='margin-bottom: 15px'>info.aruda@gmail.com</p>
-				<h4>Karthik Prakash</h4>
-				<p style='margin-bottom: 15px'>Mobile: +91 88808 80893</p>
-				<h4>Prakash Venkatappa</h4>
-				<p style='margin-bottom: 15px'>Mobile: +91 93436 80893</p>
-
+			<div id='right-contact'>
 				<form id='contact-form' action='contact-submit.php' method='post'>
-					<h4 style='margin-top: 25px'>Please fill the below details if you
-						have any queries</h4>
+					<h4 style='margin: 10px 0 15px 0; text-align: left'>Please fill the
+						below details if you have any queries</h4>
 					<div class='form-div'>
 						<label>Full Name*</label> <input type="text" id='name' name='name' />
 						<div id='name-error'>
-							<img title='Please enter a valid value' src='images/error.jpg'>
+							<p style='color: red; text-align: center; margin: 0'>Please enter
+								a valid value</p>
+							<!-- <img title='Please enter a valid value' src='images/error.jpg'> -->
 						</div>
 					</div>
 					<div class='form-div'>
@@ -94,7 +109,9 @@ include "header.php";
 						<label>Mobile Number*</label> <input maxlength='10' type="text"
 							id='mob-num' name='mob-num' />
 						<div id='mob-error'>
-							<img title='Please enter a valid value' src='images/error.jpg'>
+							<p style='color: red; text-align: center; margin: 0'>Please enter
+								a valid value</p>
+							<!-- <img title='Please enter a valid value' src='images/error.jpg'> -->
 						</div>
 					</div>
 					<div class='form-div'>
@@ -113,16 +130,19 @@ include "header.php";
 					</div>
 					<div class='form-div'>
 						<label>Query*</label>
-						<textarea id='message' name='message'></textarea>
+						<textarea rows='8' id='message' name='message'></textarea>
 						<div id='msg-error'>
-							<img title='Please enter a valid value' style='margin-top: 12px'
-								src='images/error.jpg'>
+							<p style='color: red; text-align: center; margin: 0'>Please enter
+								a valid value</p>
+							<!-- <img title='Please enter a valid value' src='images/error.jpg'> -->
 						</div>
 					</div>
-					<div style='margin-left: 120px;'>
-						<input style='width: 120px' type="submit" id='submit'
-							name='submit' onclick='return validate()' value='Submit' />
-					</div>
+
+					<input style='width: 120px; margin-left: 95px' type="submit"
+						id='submit' name='submit' onclick='return validate()'
+						value='Submit' />
+
+
 				</form>
 			</div>
 		</div>

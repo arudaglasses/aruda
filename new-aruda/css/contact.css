@@ -1,17 +1,17 @@
 #left-contact {
-	padding-top:20px;
+	padding-top: 20px;
 	padding-left: 20px;
-	text-align:center;
-	float:left;
-	width:300px;
+	float: left;
+	width: 380px;
 }
 
 #right-contact {
-	padding-top:20px;
-	width:400px;
-	float:right;
-	clear:right;
+	padding: 20px 0 0 10px;
+	width: 390px;
+	float: right;
+	clear: right;
 }
+
 label {
 	color: #4a6162;
 	font-family: Book Antiqua;
@@ -19,12 +19,39 @@ label {
 	text-align: center;
 }
 
-#contact-form { padding-left: 30px; }
 
-.form-div {margin-bottom:15px;float:left;}
-.form-div img {float:left; margin:0 5px}
-#name-error, #mob-error, #msg-error, #email-error {display:none}
-.red-border {border: 1px solid red;}
-#content label {width:150px;float:left;text-align:left}
+.form-div {
+	margin-bottom: 15px;
+	float: left;
+}
 
-#content input,textarea,select {width:200px;float:left;margin-top:3px}
+.form-div img {
+	float: left;
+	margin: 0 5px
+}
+
+#name-error, #mob-error, #msg-error, #email-error {
+	display: none;
+	float: left;
+	font-size: 14px;
+	font-style: italic;
+	text-align: center;
+	width: 300px;
+}
+
+.red-border {
+	border: 1px solid red;
+}
+
+#content label {
+	width: 150px;
+	float: left;
+	text-align: left
+}
+
+#content input, textarea, select {
+	clear: left;
+	width: 300px;
+	float: left;
+	margin-top: 3px
+}
