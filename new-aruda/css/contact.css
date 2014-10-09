@@ -19,7 +19,6 @@ label {
 	text-align: center;
 }
 
-
 .form-div {
 	margin-bottom: 15px;
 	float: left;
@@ -54,4 +53,16 @@ label {
 	width: 300px;
 	float: left;
 	margin-top: 3px
+}
+
+.address {
+	margin: 0;
+	text-align: left;
+	padding-left: 20px;
+}
+
+.email-ph {
+	margin: 0px 0px 15px;
+	text-align: left;
+	padding-left: 20px;
 }

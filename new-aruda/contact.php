@@ -55,33 +55,25 @@ include "header.php";
 		<!-- Nav -->
 		<div id="content">
 			<div id='left-contact' style='text-align: center'>
-				<p
-					style='margin: 0px 0px 15px; text-align: left; padding-left: 20px;'>
+				<p class='email-ph'>
 					<img width="25px" height="35px" title='E-mail'
 						src='images/email.jpg'> info.aruda@gmail.com
 				</p>
-				<p
-					style='margin: 0px 0px 15px; text-align: left; padding-left: 20px;'>
+				<p class='email-ph'>
 					<img width="25px" height="35px" title='Phone/Mobile'
 						src='images/Mobile2.png'> 88808 80893 (Karthik P)
 				</p>
-				<p
-					style='margin: 0px 0px 15px; text-align: left; padding-left: 20px;'>
+				<p class='email-ph'>
 					<img width="25px" height="35px" title='Phone/Mobile'
 						src='images/Mobile2.png'> 93436 80893 (Prakash V)
 				</p>
 
 				<h3 style='margin: 30px 0 5px 20px; text-align: left'>Where are we?</h3>
-				<p style='margin: 0; text-align: left; padding-left: 20px;'>Aruda
-					Glass Solutions</p>
-				<p style='margin: 0; text-align: left; padding-left: 20px;'>#9/2,
-					Near Lakshmi Minerals</p>
-				<p style='margin: 0; text-align: left; padding-left: 20px;'>Bandappa
-					Garden</p>
-				<p style='margin: 0; text-align: left; padding-left: 20px;'>Gokula
-					Post</p>
-				<p style='margin: 0; text-align: left; padding-left: 20px;'>Bangalore
-					560 054</p>
+				<p class='address'>Aruda Glass Solutions</p>
+				<p class='address'>#9/2, Near Lakshmi Minerals</p>
+				<p class='address'>Bandappa Garden</p>
+				<p class='address'>Gokula Post</p>
+				<p class='address'>Bangalore 560 054</p>
 				<br />
 				<div id="googleMap"
 					style="width: 320px; height: 225px; margin-bottom: 15px; text-align: center"></div>
