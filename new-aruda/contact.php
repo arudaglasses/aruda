@@ -64,7 +64,7 @@ include "header.php";
 						src='images/Mobile2.png'> 88808 80893 (Karthik P)
 				</p>
 				<p class='email-ph'>
-					<img width="15px" height="15px" title='Phone/Mobile'
+					<img width="15px" height="25px" title='Phone/Mobile'
 						src='images/Mobile2.png'> 93436 80893 (Prakash V)
 				</p>
 
